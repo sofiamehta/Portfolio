@@ -65,7 +65,7 @@ body {
  /* Preload background image */
 body::before {
     content: "";
-    background-image: url('../images/img2.jpg');
+    background-image: url('images/img2.jpg');
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -74,7 +74,7 @@ body::before {
 }
 
 .hero {
-    background-image: url('../images/img2.jpg'); /* Specify your background image */
+    background-image: url('images/img2.jpg'); /* Specify your background image */
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the entire section */
     width: 100%;
