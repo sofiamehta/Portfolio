@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+        charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Mehta's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Sofia Mehta</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#certifications">
+                            Certifications
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main banner -->
+    <section id="home" class="hero">
+        <div class="intro" style="text-align: center; position: relative;">
+            <div class="headings">
+                <!-- Dynamic greeting -->
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <!-- Dynamic name with animation -->
+                <h1 class="my-heading" style="animation: slideIn 2s ease-out;">Sofia Mehta</h1>
+                <!-- Dynamic description -->
+                <br>
+                <h3 class="sub-heading">A Software Engineering graduate from Centennial College</h3>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- skills Section -->
+
+    <section class="skills" id="skills">
+        <div class="skills-heading">
+            <h1 class="my-heading text-center">My Skills</h1>
+        </div>
+        <br>
+        <br>
+        <div class="skills-content">
+            <div class="skills-list-container">
+                <div class="container">
+                    <div class="box">
+                        <div class="chart" data-percent="90">90%</div>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="box">
+                        <div class="chart" data-percent="95">95%</div>
+                        <h2>Data Analytics</h2>
+                    </div>
+                    <div class="box">
+                        <div class="chart" data-percent="88">88%</div>
+                        <h2>Oracle/PL/SQL</h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="chart" data-percent="95">95%</div>
+                        <h2>Business Analytics</h2>
+                    </div> 
+
+                    <div class="skills-item">
+                        <div class="skills-card">
+                            <h3 class="greet-heading blue-text">Programming</h3>
+                            <ul class="skill-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-card">
+                            <h3 class="greet-heading blue-text">OS & Tools</h3>
+                            <ul class="skill-list">
+                                <li>Windows</li>
+                                <li>Confluence</li>
+                                <li>Jira</li>
+                                <li>VS Code</li>
+                                <li>Visio</li>
+                                <li>Power BI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-card">
+                            <h3 class="greet-heading blue-text">Frameworks</h3>
+                            <ul class="skill-list">
+                                <li>.NET</li>
+                                <li>React</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                                <li>Node JS</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills-item">
+                        <div class="skills-card">
+                            <h3 class="greet-heading blue-text">Cloud</h3>
+                            <ul class="skill-list">
+                                <li>DevOps</li>
+                                <li>Machine Learning</li>
+                                <li>API's</li>
+                                <li>AWS</li>
+                                <li>Microsoft Azure</li>
+                                <li>Big Data </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        $(function () {
+            $('.chart').easyPieChart({
+                size: 175,
+                barColor: "#752b3d",
+                scaleLength: 0,
+                lineWidth: 20,
+                trackColor: "grey",
+                lineCap: "circle",
+                animate: 2000,
+            });
+        });
+    </script>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 id="myHeading" class="my-heading" style="text-align: center;">About Me</h1>
+
+            <p class="lead-para" style="text-align: justify;">
+
+            <ul>Software Engineering Technology graduate from Centennial College. Passionate for innovation and
+                problem-solving, I thrive in
+                the dynamic world of software engineering. Proficient in languages like Python, Java, Java Script and
+                C#, I leverage my technical expertise to
+                develop robust and scalable solutions. Data structures and data modelling also
+                equips me to tackle complex challenges in software development.
+                <br>
+                </p>
+
+        </div>
+        <div class="about-image">
+            <img src="..\images\img.jpg" alt="About Image">
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- certifications Section -->
+    
+    <section class="certifications" id="certifications">
+        <div class="certifications-heading">
+            <h1 class="my-heading text-center">Featured Certifications</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+      
+        <div class="certifications-content">
+            <div class="my-row">
+
+                <a href="https://drive.google.com/drive/folders/1tDKtOEmo9jUV0PJFl6vcDfoLA-ppiQ-j">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="..\images\coursera.png" alt="Web Design Image">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1F5zzHU_KmMRfDz3W6I-l7kHi_JKtPFA_">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="..\images\hackathon.png" alt="Web Design Image">
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1h-LnH6Vtq6YgF7TrCQcUklZinlUdfv_e">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="..\images\linkedinlearning.png" alt="Web Design Image">
+                        </div>
+
+                    </div>
+                </a>
+                
+            </div>
+            <!--div class="my-row">
+
+
+                <a href="https://drive.google.com/drive/folders/1enVcPqVBeeJLIieE4RA8XqvjE80TOqO4">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="..\images\azure.png" alt="Web Design Image">
+                        </div>
+
+                    </div>
+                </a>
+            </div-->
+        </div>
+
+        
+    </section>
+    <br>
+    <br>
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="social-links">
+            <div class="footer-menu">
+
+                <a class="footer-links" href="mailto:sofiamehtaaa@gmail.com" style="color:  #752b3d" >
+                    <i class="far fa-envelope" style="text-align: center;"></i> sofiamehtaaa@gmail.com
+                </a>
+
+                <ul class="footer-menu-list">
+
+
+                    <li class="footer-list-items" style="text-align: center;">
+                        <a class="footer-links" href="https://github.com/sofiamehta03">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+
+
+                    <li class="footer-list-items" style="text-align: center;">
+                        <a class="footer-links" href="https://www.linkedin.com/in/sofiamehta/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-content text-center" style="text-align: center;">
+            <h4>
+                Copyright © 2024. All rights are reserved by Sofia Mehta.
+            </h4>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
